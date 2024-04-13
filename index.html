@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        function switchContainers() {
+            const signInButton = document.querySelector('.switch-button');
+            const leftContainer = document.querySelector('.red-container');
+            const rightContainer = document.querySelector('.white-container');
+            const l_Paragraph = document.querySelector('.l-paragraph');
+            const r_Paragraph = document.querySelector('.r-paragraph');
+            const l_HeadLine = document.querySelector('.l-headline');
+            const r_HeadLine = document.querySelector('.r-headline');
+            const forgot = document.querySelector('.forgot');
+            const submit = document.querySelector('.submit');
+            
+            // Toggle classes to slide containers
+            leftContainer.classList.toggle('float-right');
+            rightContainer.classList.toggle('float-left');
+
+            // Change text and functionality of the button
+            if (signInButton.textContent === 'SignIn') {
+                signInButton.textContent = 'SignUp';
+                l_HeadLine.textContent = 'Hello Friend!';
+                r_HeadLine.textContent = 'Sign in';
+                l_Paragraph.textContent = 'Enter your personal details and start journey with us';
+                r_Paragraph.textContent = 'or use your account';
+                forgot.textContent = 'Forgot your password?';
+                submit.textContent = 'SIGNIN';
+            } else {
+                signInButton.textContent = 'SignIn';
+                l_HeadLine.textContent = 'Welcome Back!';
+                r_HeadLine.textContent = 'Create Account';
+                l_Paragraph.textContent = 'To keep connected with us please login with your personal info';
+                r_Paragraph.textContent = ' or use your email for registration';
+                forgot.textContent = '';
+                submit.textContent = 'SIGNUP';
+            }
+        }
+    </script>
+</head>
+<body>
+    
+<div class="container red-container">
+    <h1 class="l-headline">Welcome Back!</h1>
+    <p class="l-paragraph">To keep connected with us please login with your personal info</p>
+    <!-- <div class="content red">
+    
+    </div> -->
+    <button class="switch-button" onclick="switchContainers()">SignIn</button>
+</div>
+
+<div class="container white-container">
+    <form action="#">
+        <h1 class="r-headline">Create Account</h1>
+        <div class="social-login">
+            <div class="social-icons">
+                <a href="#" class="social-login-link facebook">F
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-login-link google">G
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="social-login-link linkedin">in
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            
+        </div>
+        <p class="r-paragraph"> or use your email for registration</p>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <p class="forgot"></p>
+        <center>
+            <button class="submit">Sign Up</button>
+        </center>
+    </form>
+    <div class="form-container sign-up container">
+    </div>
+</div>
+
+</body>
+</html>

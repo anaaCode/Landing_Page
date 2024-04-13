@@ -1,0 +1,193 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+.red-container {
+    /* height: 1000px; */
+    /* height: auto; */
+    height: 100vh;
+    text-align: center;
+    background-color: red;
+    color :white;
+    float: left;
+     /* Adjust as needed */
+    
+}
+
+
+
+.l-headline{
+    padding-top: 30%;
+    padding-left: 2%;
+}
+/* .r-headline{
+    padding-top: 2%;
+    
+} */
+.l-paragraph{
+   align-items: center;
+   /* margin: 0% 10%; */
+   /* padding-left: ; */
+   
+}
+.white-container {
+    text-align: center;
+    /* height: 1000px; */
+    /* height: auto; */
+    height: 100vh;
+    background-color: white;
+    color:black;
+    float: right;
+}
+.form-container{
+    align-content: center;
+}
+.switch-button {
+    display: block;
+    margin: 10% 35%;
+    background-color: #ff4b2b;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+} 
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+.float-right {
+    transform: translateX(100%);
+}
+
+.float-left {
+    transform: translateX(-100%);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .red-container,
+    .white-container {
+        float: none;
+        width: 100%;
+    }
+}
+
+.sign-up {
+    position: center;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+input {
+    background-color: #eee;
+    align-self: center;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 70%;
+}
+
+button {
+    border-radius: 20px;
+    background-color: #ff4b2b;
+    border: 1px solid #ff4b2b;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons i {
+    font-size: 24px;
+}
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000; /* Changing text color to black */
+    border: 2px solid #000; /* Adding black border */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff; /* Setting white background */
+}
+
+.social-icons i {
+    font-size: 24px;
+}
+
+/* Adjust colors for individual social media icons */
+.facebook {
+    border-color: #000;
+}
+
+.google {
+    border-color: #000;
+}
+
+.linkedin {
+    border-color: #000;
+}
+
+
+.social-login-link {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
